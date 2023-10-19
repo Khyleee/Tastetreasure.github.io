@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Treasures</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+
+    <style>
+      *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+.all-content{
+background: black;
+}
+html::-webkit-scrollbar-track{
+background: black;
+}
+html::-webkit-scrollbar-thumb{
+background: #F29696;
+border-radius: 10px;
+}
+html::-webkit-scrollbar{
+width: 10px;
+}
+/* navbar */
+#navbar{
+background-color: #4C657E;
+font-family: 'Roboto', sans-serif;
+}
+#logo img{
+border-radius: 5px;
+width: 75px;
+margin-left: 40px;
+}
+.navbar-nav{
+margin-left: 50px;
+}
+.nav-item .nav-link{
+color: black;
+margin-left: 10px;
+font-weight: bold;
+transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+background: #f7f5f2;
+border-radius: 5px;
+color: black;
+}
+#navbar form button{
+background: black;
+color: white;
+border: 1px solid white;
+}
+/* navbar */
+/* Promo */
+.Promo{
+  width: 100%;
+  background: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.heading3{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #4C657E;
+}
+.heading3 span{
+    color: #F29696;
+}
+#container2{
+  margin-top: 20px;
+}
+.Promo .card{
+  background: black;
+  box-shadow: rgb(242, 150, 150) 0px 8px 24px;
+}
+.star i{
+  color: yellow;
+}
+.Promo h3{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.Promo p{
+  font-size: 16px;
+  color: white;
+  padding-top: 10px;
+}
+.Promo a{
+    font-size: 16px;
+    align-items: end;
+}
+/* promo */
+
+/* Promo2 */
+.Promo2{
+  width: 100%;
+  background: black;
+  font-family: 'Roboto', sans-serif;
+  padding: 20px;
+}
+.Promo2{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+}
+#container2{
+  margin-top: 20px;
+}
+.Promo2 .card{
+  background: #222831;
+  box-shadow: rgb(242, 150, 150) 0px 8px 24px;
+}
+
+.Promo2 h3{
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+}
+.heading3 span{
+color: #F29696;
+}
+.Promo2 p{
+  font-size: 16px;
+  color: white;
+  padding-top: 10px;
+}
+.Promo2 a{
+    font-size: 16px;
+    align-items: end;
+}
+/* Promo2 */
+
+/* footer */
+#footer{
+  width: 100%;
+  background: #4C657E;
+  margin-top: 50px;
+}
+.footer-logo img{
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#footer .socail-links i{
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.credite{
+  color: white;
+  margin-top: 20px;
+}
+.credite{
+  text-shadow: 0px 0px 1px black;
+}
+.credite a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.credite a span{
+  color: black;
+}
+.copyright span{
+  color: black;
+}
+/* footer */
+html{
+  scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  
+}
+    </style>
+
+    <body>
+        <div class="all-content">
+   
+            <!-- navbar -->
+<nav class="navbar navbar-expand-lg" id="navbar">
+<div class="container-fluid">
+  <a class="navbar-brand" href="#" id="logo"><img src="logo.png" alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="L1.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Menu.html">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Gallary.html">Gallary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="file:///C:/Users/CLienT/Documents/MP1/L1.html#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Blogs.html">Blogs</a>
+      </li>
+     
+     
+     
+    </ul>
+    <form class="d-flex">
+        <a class="btn btn-secondary text-white" href="Signup.html" role="button">Log out</a>
+    </form>
+  </div>
+</div>
+</nav>
+<!-- navbar -->
+
+<!-- Promos -->
+<section class="Promo" id="Promo">
+    <div class="container">
+    <div class="heading3">Holiday's <span>Promo</span></div>
+    </div>
+    <div class="container" id="container2">
+        <div class="row">
+          <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+              <img src="pr1-bugerfries.jpeg" alt="pr1-bugerfries">
+              <div class="card-body">
+    
+                <h3>T1 Burger with Fries </h3>
+                <p></i>₱120.00   <strike>₱150.00</strike></p><a class="btn btn-secondary text-dark" href="Order.html" role="button">Order</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+              <img src="pr2-spagchickencoke.png" alt="pr2-spagchickencoke">
+              <div class="card-body">
+                <h3>T2 ChickenMeal </h3>
+                <p></i>₱299.00  <strike>₱310</strike></p><a class="btn btn-secondary text-dark" href="Order.html" role="button">Order</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+              <img src="pr3-pizzafriescoke.jpg" alt="pr3-pizzafriescoke">
+              <div class="card-body">
+                <h3>T3 Pizza Meal </h3>
+                <p></i>₱110.00  <strike>₱125</strike></p><a class="btn btn-secondary text-dark" href="Order.html" role="button">Order</a>
+              </div>
+              </div>
+              </div>
+              <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                  <img src="pr4-double burger.png" alt="pr4-double">
+                  <div class="card-body">
+                    <h3>T4 Double Burger</h3>
+                    <p></i>₱175.00  <strike>₱200</strike></p><a class="btn btn-secondary text-dark" href="Order.html" role="button">Order</a>
+                  </div>
+                  </div>
+                  </div>
+                  <!-- Promos -->
+</section>
+             <!-- Promo2 -->
+<section class="Promo2" id="Promo2">
+  <div class="container">
+  <div class="heading3">Halloween <span>Promo's</span></div>
+</div>
+  <div class="container" id="container2">
+  <div class="row">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="pr5-WholeChicken.png" alt="pr5-WholeChicken">
+        <div class="card-body">
+          <h3>T5 Whole Chicken For Family</h3>
+          <p></i>₱320.00<strike>₱380.00</strike></p><a class="btn btn-secondary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="pr6-Wholepizza.png" alt="pr6-Wholepizza">
+        <div class="card-body">
+          <h3>T6 Whole pizza good for 5px</h3>
+          <p></i>₱180<strike>₱200</strike></p><a class="btn btn-secondary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="pr7-Carbonara.png" alt="pr7-Carbonara">
+        <div class="card-body">
+          <h3>T7 Carbonara good for 5px</h3>
+          <p></i>₱299.00<strike>₱320</strike> </p><a class="btn btn-secondary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="pr8-Chicken.png" alt="pr8-Chicken">
+        <div class="card-body">
+          <h3>T8 Chicken bestie Good for 6px</h3>
+          <p></i>₱30.00<strike>₱320</strike></p><a class="btn btn-secondary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- Promo2 -->
+
+<!-- footer -->
+<footer id="footer">
+
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credite text-center">
+        Designed By <a href="#"> Czarina Khyle Lopez</a>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Taste Treasures</span></strong>. All Rights Reserved
+  </div>
+</footer>
+
+   <!-- footer -->
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+
+
+
+
+    </body>
+
+
+    </head>
+    </html>

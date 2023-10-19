@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Treasures</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+
+    <style>
+      *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+.all-content{
+background: black;
+}
+html::-webkit-scrollbar-track{
+background: black;
+}
+html::-webkit-scrollbar-thumb{
+background: #F29696;
+border-radius: 10px;
+}
+html::-webkit-scrollbar{
+width: 10px;
+}
+/* navbar */
+#navbar{
+background-color: #4C657E;
+font-family: 'Roboto', sans-serif;
+}
+#logo img{
+border-radius: 5px;
+width: 75px;
+margin-left: 40px;
+}
+.navbar-nav{
+margin-left: 50px;
+}
+.nav-item .nav-link{
+color: black;
+margin-left: 10px;
+font-weight: bold;
+transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+background: #f7f5f2;
+border-radius: 5px;
+color: black;
+}
+#navbar form button{
+background: black;
+color: white;
+border: 1px solid white;
+}
+/* navbar */
+
+/* about */
+#about{
+  width: 100%;
+  height: 100vh;
+  background: #EEEEEE;
+  font-family: 'Roboto', sans-serif;
+}
+#about .container{
+  padding-top: 70px;
+}
+.heading1{
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.heading1 span{
+ color: #4C657E;
+}
+#about .card{
+  border-radius: 10px;
+}
+
+#about .card img{
+  border-radius: 10px;
+}
+@media screen and (max-width:982px){
+  #about p{
+    font-size: 8px;
+  }
+}
+@media screen and (max-width:766px){
+  #about p{
+    font-size: 15px;
+  }
+  #about{
+    height: 120vh;
+  }
+}
+/* about */
+
+/* footer */
+#footer{
+  width: 100%;
+  background: #4C657E;
+  margin-top: 50px;
+}
+.footer-logo img{
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#footer .socail-links i{
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.credite{
+  color: white;
+  margin-top: 20px;
+}
+.credite{
+  text-shadow: 0px 0px 1px black;
+}
+.credite a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.credite a span{
+  color: black;
+}
+.copyright span{
+  color: black;
+}
+/* footer */
+html{
+  scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  
+}
+    </style>
+    <body>
+            <div class="all-content">
+   
+                <!-- navbar -->
+  <nav class="navbar navbar-expand-lg" id="navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" id="logo"><img src="logo.png" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="L1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Gallary.html">Gallary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="file:///C:/Users/CLienT/Documents/MP1/L1.html#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Blogs.html">Blogs</a>
+          </li>
+         
+         
+         
+        </ul>
+        <form class="d-flex">
+            <a class="btn btn-secondary text-white" href="Signup.html" role="button">Log out</a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar -->
+
+         <!-- about section -->
+        <div class="about" id="about">
+            <div class="container">
+            <div class="heading1">About <span>Us</span></div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <img src="aboutus.jpeg" alt="aboutus">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                    <h3>Burger</h3>
+                    <p>Fresh Burger™ was born in 2013 after a fruitless search for a good old-fashioned hamburger. During his days in the financial industry, 
+                      Jacques traveled the world and discovered that the best food, anywhere in the world,
+                       could be found in restaurants that had a limited menu. 
+            
+                      <br><br>. With the hamburger being one of his favourite foods, Jacques frequented many hamburger spots during his travels. Back home in Toronto, 
+                      the inability to find a well-made classic hamburger was particularly frustrating to him. Despite Toronto being a hub for restaurants, and hamburgers,
+                       
+                      <br><br>he simply could not find the delicious old-fashioned fresh burger he was seeking. It felt as though restaurants were trying too hard to be different and innovative, overcomplicating a simple concept.
+                     </p>
+                </div>
+              </div>
+            </div>
+            
+          </div><div class="about" id="about">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card">
+                    <img src="m5-pizza.jpeg" alt="pizza">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <h3>Pizza</h3>
+                  <p>pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, 
+                    mozzarella or other cheese, and many other ingredients, baked quickly—usually,
+                     in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot
+
+                    <br><br> pizza is one of the most popular foods in the world for a variety of reasons. It is relatively cheap and easy to make, it is versatile, 
+                    convenient, and can be customized to suit different tastes. Pizza is also a social food and comfort food that evokes happy memories for many people.
+                    precursor of pizza was probably the focaccia, a flatbread known to the Romans as panis focacius, to which toppings were then added.
+                    Modern pizza evolved from similar flatbread dishes in Naples, Italy, in the 18th or early 19th century.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><div class="about" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <img src="m8-chicken.jpeg" alt="m8-chicken">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <h3>Chicken</h3>
+                <p>is a protein-rich meal with health benefits like boosting metabolism, improving digestion,
+                   muscle building, and many more. Often perceived as unhealthy for health, spicy food is essential to a nutritious plate.
+
+                  <br><br>  Often perceived as unhealthy for health, spicy food is essential to a nutritious plate.
+
+                  If you have a savory tooth, this blog is for you and everyone who tells you that spicy Chicken is unhealthy. 
+                  This blog does not provide you with any medical advice. It is strictly meant to be an informational and recipe blog only. Please consult your physician or medical expert for what works best for you.
+                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+            <!-- about section -->
+
+               <!-- footer -->
+   <footer id="footer">
+
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credite text-center">
+        Designed By <a href="#"> Czarina Khyle Lopez</a>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Taste Treasures</span></strong>. All Rights Reserved
+  </div>
+</footer>
+
+   <!-- footer -->
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    </body>
+    </head>
+</html>

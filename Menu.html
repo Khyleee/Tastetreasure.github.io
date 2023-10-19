@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste Treasures</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <style>
+      *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+.all-content{
+background: black;
+}
+html::-webkit-scrollbar-track{
+background: black;
+}
+html::-webkit-scrollbar-thumb{
+background: #F29696;
+border-radius: 10px;
+}
+html::-webkit-scrollbar{
+width: 10px;
+}
+/* navbar */
+#navbar{
+background-color: #4C657E;
+font-family: 'Roboto', sans-serif;
+}
+#logo img{
+border-radius: 5px;
+width: 75px;
+margin-left: 40px;
+}
+.navbar-nav{
+margin-left: 50px;
+}
+.nav-item .nav-link{
+color: black;
+margin-left: 10px;
+font-weight: bold;
+transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+background: #f7f5f2;
+border-radius: 5px;
+color: black;
+}
+#navbar form button{
+background: black;
+color: white;
+border: 1px solid white;
+}
+/* navbar */
+
+/* menu */
+.menu{
+  width: 100%;
+  background: black;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+}
+.heading3{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #4C657E;
+}
+#container2{
+  margin-top: 20px;
+}
+.menu .card{
+  background: #4C657E;
+  box-shadow: rgb(242, 150, 150) 0px 8px 24px;
+}
+.star i{
+  color: yellow;
+}
+.menu h3{
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.menu p{
+  font-size: 16px;
+  color: black;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.menu a{
+    font-size: 16px;
+    align-items: end;
+}
+/* menu */
+
+/* dessert */
+.dessert{
+  width: 100%;
+  background: black;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+}
+.heading3{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #4C657E;
+}
+#container2{
+  margin-top: 20px;
+}
+.dessert .card{
+  background: #4C657E;
+  box-shadow: rgb(242, 150, 150) 0px 8px 24px;
+}
+.star i{
+  color: yellow;
+}
+.dessert h3{
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.dessert p{
+  font-size: 16px;
+  color: black;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.dessert a{
+    font-size: 16px;
+    align-items: end;
+}
+/* drinks */
+
+/* drinks */
+.drinks{
+  width: 100%;
+  background: black;
+  font-family: 'Roboto', sans-serif;
+  padding: 40px;
+}
+.heading3{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #4C657E;
+}
+#container2{
+  margin-top: 20px;
+}
+.drinks .card{
+  background: #4C657E;
+  box-shadow: rgb(242, 150, 150) 0px 8px 24px;;
+}
+.star i{
+  color: yellow;
+}
+.drinks h3{
+  color: black;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.drinks p{
+  font-size: 16px;
+  color: black;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.drinks a{
+    font-size: 16px;
+    align-items: end;
+}
+/* drinks */
+
+/* footer */
+#footer{
+  width: 100%;
+  background: #4C657E;
+  margin-top: 50px;
+}
+.footer-logo img{
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#footer .socail-links i{
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.credite{
+  color: white;
+  margin-top: 20px;
+}
+.credite{
+  text-shadow: 0px 0px 1px black;
+}
+.credite a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.credite a span{
+  color: black;
+}
+.copyright span{
+  color: black;
+}
+/* footer */
+html{
+  scroll-behavior: smooth;
+}
+.arrow{
+    position: fixed;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  
+}
+
+    </style>
+    </head>
+
+    <body>
+
+        <div class="all-content">
+   
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg" id="navbar">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#" id="logo"><img src="logo.png" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span><i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="L1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="About.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Gallary.html">Gallary</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="file:///C:/Users/CLienT/Documents/MP1/L1.html#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Blogs.html">Blogs</a>
+                    </li>
+                   
+                   
+                   
+                  </ul>
+                  <form class="d-flex">
+                    <a class="btn btn-secondary text-white" href="Signup.html" role="button">Log out</a>
+                  </form>
+                </div>
+              </div>
+            </nav>
+            <!-- navbar -->
+
+            <!-- menu -->
+<section class="menu" id="menu">
+    <div class="container">
+    <div class="heading3">Menu</div>
+  </div>
+    <div class="container" id="container2">
+    <div class="row">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="m1-burgerfries.jpeg" alt="m1-burgerfries">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Burger</h3>
+            <p></i>₱99.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="m2-salad.jpeg" alt="m2-salad">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Salad</h3>
+            <p></i>₱120.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="m3-meat.jpeg" alt="m3-meat">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Meat</h3>
+            <p></i>₱350.00<strike>₱450</strike> </p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="m4-seafood.jpeg" alt="m4-seafood">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>SeaFood</h3>
+            <p></i>₱200 <strike>₱280</strike></p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 50px;">
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="m5-pizza.jpeg" alt="m5-pizza">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Pizza</h3>
+            <p></i>₱50 <strike>₱80</strike></p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="m6-fries.webp" alt="m6-fries">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Fries</h3>
+            <p></i>₱40 <strike>₱50</strike></p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="m7-carbonara.jpeg" alt="m7-carbonara">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Carbonara</h3>
+            <p></i>₱150 <strike>₱200</strike></p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+          <img src="m8-chicken.jpeg" alt="m8-chicken">
+          <div class="card-body">
+            <div class="star text-center">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            <h3>Chicken</h3>
+            <p></i>₱120 <strike>₱150</strike></p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- menu -->
+
+       <!-- dessert -->
+        <section id="dessert" class="dessert">
+        <div class="container">
+       <div class="heading3">Dessert</div>
+           </div>
+    <div class="container" id="container3">
+      <div class="row">
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="d1-pancakes.jpeg" alt="d1">
+            <div class="card-body">
+              <h3>Pancakes</h3>
+            <p>₱85.00</i></p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="d2-halfcake.webp" alt="d2-halfcake">
+            <div class="card-body">
+              <h3>Cake</h3>
+            <p>₱100 <strike>₱150</strike></p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="d3-icecream.webp" alt="d3-icecream">
+            <div class="card-body">
+              <h3>Ice cream</h3>
+            <p>₱45.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+          <div class="card">
+            <img src="d4-doughnuts.webp" alt="d4-doughnuts">
+            <div class="card-body">
+              <h3>Doughnuts</h3>
+            <p>₱50</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- dessert -->
+
+  <!-- drinks -->
+<section class="drinks" id="drinks">
+  <div class="container">
+  <div class="heading3">Drinks</div>
+</div>
+  <div class="container" id="container2">
+  <div class="row">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="dr1-coke.png" alt="dr1-coke">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Coke</h3>
+          <p></i>₱35.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="dr2-sprite.png" alt="dr2-sprite">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Sprite</h3>
+          <p></i>₱30.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="dr6-royal.webp" alt="royal">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Royal</h3>
+          <p></i>₱35.00 </p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="dr7-Orangejuice.png" alt="Orange">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Orange Juice</h3>
+          <p></i>₱30.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 50px;">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="dr5-Icecoffee.webp" alt="dr5-Icecoffee">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Ice Coffee</h3>
+          <p></i>₱50 <strike>₱80</strike></p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="dr3-pineapple.jpeg" alt="dr3-pineapple">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Pineapple</h3>
+          <p></i>₱30.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="dr4-Icetea.jpeg" alt="dr4-Icetea">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Icetea</h3>
+          <p></i>₱30.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="dr8-Lemonjuice.webp" alt="dr8-Lemonjuice">
+        <div class="card-body">
+          <div class="star text-center">
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+          </div>
+          <h3>Lemon juice</h3>
+          <p></i>₱30.00</p><a class="btn btn-primary text-dark" href="Order.html" role="button">Order</a>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- drinks -->
+
+<!-- footer -->
+   <footer id="footer">
+   
+    <div class="socail-links text-center">
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+    </div>
+    <div class="credite text-center">
+        Designed By <a href="#"> Czarina Khyle Lopez</a>
+    </div>
+    <div class="copyright text-center">
+      &copy; Copyright <strong><span>Taste Treasures</span></strong>. All Rights Reserved
+  </div>
+</footer>
+   <!-- footer -->
+  </div>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+
+        
+
+    </body>
+</html>
